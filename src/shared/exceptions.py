@@ -10,6 +10,10 @@ class AuthError(GatewayError):
     status_code = 401
 
 
+class RoutingError(GatewayError):
+    status_code = 404
+
+
 class ValidationError(GatewayError):
     status_code = 400
 
